@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +11,238 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.App{
+  max-width: 1550px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-sizing: 0 2px 6px #08a05ca4;
+  padding: 0 15;
+  box-sizing: border-box;
+}
+
+/*------------------HEADER--------------*/
+
+header{
+  width: 97%;
+  min-height: 100px;
+  max-width: 1530px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  box-sizing: border-box;
+  background-color: rgb(30, 33, 42);
+  box-shadow: 0 5px 10px black;
+}
+
+a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover{
+  color: #a09108a4;
+}
+
+li{
+  list-style: none;
+}
+
+header ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+header ul li{
+  padding: 0 1rem;
+}
+
+header ul li a{
+  font-weight: bold;
+}
+
+header .cart {
+  position: relative;
+  cursor: pointer;
+}
+
+header .cart box-icon{
+  width: 45px;
+  height: 45px;
+}
+
+header .cart span{
+  position: absolute;
+  top: -1rem;
+  right: -1.5rem;
+  width: -2.5rem;
+  height: 2.5rem;
+  border: 1px solid royalblue;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: royalblue;
+}
+
+/*-----------Cart----------*/
+.carritos{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100;
+  height: 100%;
+  transition: all 300ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  padding-bottom: 5rem;
+}
+
+.carrito{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 80%;
+  border-radius: 8px;
+  overflow-x: scroll;
+  transition: all 300ms ease-in-out;
+  background-color: white;
+}
+
+/*-------------Productos-------------*/
+.titulo{
+  font-size: 2rem;
+  padding: 10rem 0 0 0;
+  color: #000000a4;
+}
+
+.productos{
+  padding: 5rem 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 3rem 2rem;
+  box-sizing: border-box;
+}
+
+.producto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 1px 10px 10px 2px rgba(0, 0, 0, 0.6);
+  border: 6px solid transparent;
+  border-radius: 5px;
+}
+
+.producto:hover{
+  border: 6px solid #0856a0a4;
+}
+
+.producto_img img{
+  width: 310px;
+}
+
+.producto_footer{
+  padding: 1rem;
+}
+
+.producto_footer h1{
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: rgb(30, 33, 42);
+  font-family: Helvetica, sans-serif;
+}
+
+.producto_footer p{
+  font-weight: 700;
+  color: rgba(0, 0, 0, .55);
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.producto_footer .price{
+  font-size: 2rem;
+  color: rgb(30, 33, 42);
+}
+
+.producto .buttom{
+  width: 100%;
+  height: 45px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 1rem 3rem;
+  padding: 0 1rem;
+  margin: 1rem;
+}
+
+.buttom .btn{
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttom .button{
+  background-color: rgb(64, 41, 192);
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+}
+
+.buttom div{
+  background-color:  rgb(30, 33, 42);
+  display: grid;
+  align-items: center;
+  margin-left: -2rem;
+  border-radius: 5px;
+}
+
+.buttom div a{
+  color: rgba(255, 255, 255);
+  font-weight: 700;
+}
+
+.buttom div a:hover{
+  color: white;
+}
+
+/*----------Inicio---------*/
+.inicio{
+  width:  100%;
+  margin: 0 auto;
+  padding-top: 9rem;
+}
+
+.inicio h1{
+  font-size: 2.5rem;
+  color: black;
+}
+
+.inicio img{
+  width: 100%;
+}
+
+/*-------------Media-----------*/
+@media only screen and (max-width: 570){
+  header ul {
+    display: none;
+  }
 }
