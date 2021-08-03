@@ -73,11 +73,13 @@ header ul li a{
 header .cart {
   position: relative;
   cursor: pointer;
+  color: #a09108a4;
 }
 
 header .cart box-icon{
   width: 45px;
   height: 45px;
+  color: #a09108a4;
 }
 
 header .cart span{
@@ -227,7 +229,7 @@ header .cart span{
 
 /*----------Inicio---------*/
 .inicio{
-  width:  100%;
+  width: 100%;
   margin: 0 auto;
   padding-top: 9rem;
 }
@@ -238,7 +240,11 @@ header .cart span{
 }
 
 .inicio img{
-  width: 100%;
+  width: 50%;
+  height: 22%;
+  min-height: 100px;
+  max-width: 1530px;
+
 }
 
 /*-------------Media-----------*/

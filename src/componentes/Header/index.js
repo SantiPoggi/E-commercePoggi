@@ -4,22 +4,24 @@ import Logo  from "../../images/logo.jpeg";
 export const Header = () => {
     return (
         <header>
-            <a href="r"> 
+            <a href="/"> 
                 <div className="logo">
                     <img src={Logo} alt=""/>
                 </div>
             </a>
             <ul>
                 <li>
-                    <a href="f">INICIO</a>
+                    <a href="/">INICIO</a>
                 </li>
                 <li>
-                    <a href="v">PRODCTOS</a>
+                    <a href="/productos">PRODUCTOS</a>
                 </li>
             </ul>
             <div>
-                <box-icon name="cart"></box-icon>
-                <span className="item__total">0</span>
+                <a href="/carrito">
+                    <box-icon name="cart"></box-icon>
+                    <span className="item__total">0</span>
+                </a>
             </div>
     
         
