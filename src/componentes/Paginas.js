@@ -2,7 +2,7 @@ import React from 'react'
 import { Switch, Route } from "react-router-dom";
 import { Inicio } from "./Inicio";
 import { ProductosLista } from "./Productos/index";
-import { Cart } from "./Cart"; 
+import { Cart } from "./Cart/index"; 
 
 export const Paginas = () => {
     return (

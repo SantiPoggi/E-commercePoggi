@@ -133,6 +133,12 @@ header .cart span{
   color: #000000a4;
 }
 
+.produ{
+  font-size: 2.4rem;
+  padding: 10rem 0 0 0;
+  color: #08a05c;
+}
+
 .productos{
   padding: 5rem 0;
   margin: 0 auto;
@@ -157,7 +163,7 @@ header .cart span{
 }
 
 .producto_img img{
-  width: 300px;
+  width: 200px;
 }
 
 .producto_footer{
