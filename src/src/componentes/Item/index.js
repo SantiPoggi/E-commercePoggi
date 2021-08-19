@@ -1,46 +1,28 @@
-import React, { Component } from "react";
-import { GitHub, LinkedIn } from "@material-ui/icons";
-import "./Footer.scss";
+import React from "react";
+import { Link } from "react-router-dom";
+import "./index.scss";
 
-class Footer extends Component {
-  render() {
-    return (
-      <footer>
-        <div className="social">
-          <a
-            className="social-github"
-            href="https://github.com/eduardomgonzalez"
-            target="blank"
-          >
-            <GitHub
-              color="secondary"
-              fontSize="large"
-              className="social-icons"
+const Item = ({ product }) => {
+  const { name, description, price, image } = product;
+
+  return (
+    <div className="link">
+      <Link to={`/item/${product.id}`}>
+        <div className="counter link__item" style={{ width: "15rem" }}>
+          <div className="counter__content">
+            <h5 className="card-title">{name}</h5>
+            <img
+              src={image}
+              className="card-img-top"
+              alt="Imagen de Producto"
             />
-          </a>
-          <a
-            className="social-linkedin"
-            href="https://www.linkedin.com/in/eduardo-gonzalez01/"
-            target="blank"
-          >
-            <LinkedIn
-              color="secondary"
-              fontSize="large"
-              className="social-icons"
-            />
-          </a>
+            <p>{description}</p>
+            <h6>${price}</h6>
+          </div>
         </div>
+      </Link>
+    </div>
+  );
+};
 
-        <div className="copyright">
-          © 2021 Copyright
-          <a href="https://eduardo-gonzalez-portafolio.now.sh/" target="blank">
-            {" "}
-            Santiago Poggi
-          </a>
-        </div>
-      </footer>
-    );
-  }
-}
-
-export default Footer;
+export default Item;

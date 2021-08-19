@@ -4,11 +4,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
-import Home from "./pages/Home/Home";
-import Cart from "./pages/Cart/Cart";
-import Categories from "./pages/Categories/Categories";
+import Navbar from "./components/Navbar/index";
+import Footer from "./components/Footer/index";
+import Home from "./paginas/Home/index";
+import Cart from "./paginas/Cart/index";
+import ItemDetailPage from "./paginas/ItemDetailPage/index";
+import Categories from "./paginas/Categorias/index";
+import Form from "./paginas/Form/index";
 
 import CartContext from "./contexts/cartContext";
 
@@ -28,7 +30,12 @@ function App() {
               <Route exact path="/">
                 <Home greeting={greeting} />
               </Route>
-              
+              <Route path="/form">
+                <Form />
+              </Route>
+              <Route path="/item/:id">
+                <ItemDetailPage />
+              </Route>
               <Route path="/categories/:categoryId">
                 <Categories />
               </Route>

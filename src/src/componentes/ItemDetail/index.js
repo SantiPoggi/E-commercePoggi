@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
-import ItemCount from "../ItemCount/ItemCount";
-import Item from "../Item/Item";
+import ItemCount from "../ItemCounter/index";
+import Item from "../Item/index";
 import CartContext from "../../contexts/cartContext";
 
-import "./ItemDetail.scss";
+import "./index.scss";
 import { Button } from "@material-ui/core";
 
 const ItemDetail = ({ product }) => {
