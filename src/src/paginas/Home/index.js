@@ -1,9 +1,9 @@
 import React from "react";
-import ItemList from "../../components/ItemList/ItemList";
-import Slider from "../../components/Slider/Slider";
+import ItemList from "../../componentes/ItemList/index";
+import Slider from "../../componentes/Slider/index";
 
 
-import "./Home.scss";
+import "./index.scss";
 
 const Home = ({ greeting, onAdd }) => {
   return (

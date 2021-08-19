@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from "react";
 import CartContext from "../../contexts/cartContext";
-import "./Table.scss";
+import "./index.scss";
 
 const Table = () => {
   const { cart, setCart, setQnt } = useContext(CartContext);

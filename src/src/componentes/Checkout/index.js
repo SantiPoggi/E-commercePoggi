@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import CartContext from "../../contexts/cartContext";
 
-import "./Checkout.scss";
+import "./index.scss";
 
 const Checkout = () => {
   const [totalPrice, setTotalPrice] = useState(0);

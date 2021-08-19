@@ -9,7 +9,7 @@ class Footer extends Component {
         <div className="social">
           <a
             className="social-github"
-            href="https://github.com/eduardomgonzalez"
+            href="https://github.com/SantiPoggi"
             target="blank"
           >
             <GitHub
@@ -20,7 +20,7 @@ class Footer extends Component {
           </a>
           <a
             className="social-linkedin"
-            href="https://www.linkedin.com/in/eduardo-gonzalez01/"
+            href="https://www.linkedin.com/in/santiago-poggi-914325168"
             target="blank"
           >
             <LinkedIn

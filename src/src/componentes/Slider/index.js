@@ -1,8 +1,8 @@
 import React from "react";
-import "./Slider.scss";
+import "./index.scss";
 import styled from "styled-components";
 import Carousel from "react-elastic-carousel";
-import { Images } from "../../utils/images";
+import { Images } from "../../utiles/index";
 
 const Item = styled.div`
   display: flex;

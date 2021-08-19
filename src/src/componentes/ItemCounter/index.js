@@ -2,17 +2,17 @@ import React, { useState, useEffect } from "react";
 import RemoveIcon from "@material-ui/icons/Remove";
 import AddIcon from "@material-ui/icons/Add";
 
-import "./ItemCount.scss";
+import "./index.scss";
 
 const ItemCount = ({ initial, min, max, setQuantity }) => {
   const [counter, setCounter] = useState(initial);
 
   const handleIncrement = () => {
-    counter < max ? setCounter(counter + 1) : console.log("Máximo alcanzado");
+    counter < max ? setCounter(counter + 6) : console.log("Máximo alcanzado");
   };
 
   const handleDecrement = () => {
-    counter > min ? setCounter(counter - 1) : console.log("Mínimo alcanzado");
+    counter > min ? setCounter(counter - 6) : console.log("Mínimo alcanzado");
   };
 
   useEffect(() => {
