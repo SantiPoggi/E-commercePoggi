@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import Table from "../../components/Table/Table";
-import Checkout from "../../components/Checkout/Checkout";
+import Table from "../../componentes/Table/index";
+import Checkout from "../../componentes/Checkout/index";
 import CartContext from "../../contexts/cartContext";
 
-import "./Cart.scss";
+import "./index.scss";
 
 const Cart = () => {
   const { cart } = useContext(CartContext);
