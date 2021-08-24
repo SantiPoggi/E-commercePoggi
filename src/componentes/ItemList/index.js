@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
-import Loading from "../Loading/Loading";
+import ItemDetailContainer from "../ItemDetailCon/index";
+import Loading from "../Carga/index";
 import { getFirestore } from "../../firebase";
 import { Link } from "react-router-dom";
 
-import "./ItemList.scss";
+import "./index.scss";
 
 const ItemList = ({ onAdd }) => {
   const [products, setProducts] = useState([]);

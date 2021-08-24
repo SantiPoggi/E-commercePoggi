@@ -18,7 +18,7 @@ function App() {
   const [cart, setCart] = useState([]);
   const [qnt, setQnt] = useState(0);
 
-  const greeting = "Sport Store";
+  const greeting = "Taberna del cervecero";
 
   return (
     <div>

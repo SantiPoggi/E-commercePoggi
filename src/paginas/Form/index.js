@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import CartContext from "../../contexts/cartContext";
 import { getFirestore } from "../../firebase/index";
-import * as firebase from "firebase/app";
+import firebase from "firebase/app";
 import "firebase/firestore";
 
 function Field({
@@ -139,9 +139,9 @@ const Form = () => {
         <div className="container">
           <div className="py-5 text-center mt-5">
             <h2 className="mt-5">¡Gracias por elegirnos!</h2>
-            <h4 className="my-5">La compra se ha realizado exitosamente.</h4>
+            <h4 className="my-5">La compra se ha realizado con exito.</h4>
             <strong>El ID de tu compra es {orderId}</strong>
-            <p className="danger">Sport Store</p>
+            <p className="danger">Taberna del cervecero</p>
             <Link className="btn btn-outline-primary m-3" to={`/`}>
               <strong>Ir a comprar</strong>
             </Link>
