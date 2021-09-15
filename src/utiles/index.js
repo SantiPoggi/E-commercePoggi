@@ -1,11 +1,11 @@
 import Cerveza from "../images/brut ipa.jpeg";
-import Cerveza1 from "../images/brut ipa.jpg";
-import Cerveza2 from "../images/brut ipa.jpg";
-import Cerveza3 from "../images/brut ipa.jpg";
-import Cerveza4 from "../images/brut ipa.jpg";
-import Cerveza5 from "../images/brut ipa.jpg";
-import Cerveza6 from "../images/brut ipa.jpg";
-import Logo from "../images/logo.jpg";
+import Cerveza1 from "../images/brut ipa.jpeg";
+import Cerveza2 from "../images/brut ipa.jpeg";
+import Cerveza3 from "../images/brut ipa.jpeg";
+import Cerveza4 from "../images/brut ipa.jpeg";
+import Cerveza5 from "../images/brut ipa.jpeg";
+import Cerveza6 from "../images/brut ipa.jpeg";
+import Logo from "../images/logo.jpeg";
 
 
 export const Images = {

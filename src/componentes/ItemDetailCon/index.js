@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
-import ItemDetail from "../ItemDetail/ItemDetail";
+import ItemDetail from "../Itemdetail/index";
 import Loading from "../Carga/index";
 
 const ItemDetailContainer = ({ product, onAdd }) => {
   const [article, setArticle] = useState();
   const [loading, setLoading] = useState(true);
+  
 
   const getProduct = () => {
-    return new Promise((res, rej) => {
+    return new Promise((res) => {
       setTimeout(() => {
         res(product);
       }, 1000);
